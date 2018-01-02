@@ -1,0 +1,63 @@
+layout: false
+---
+<html>
+<script>
+var message = [	'▁▂▃▄▅▆▇ ♫音乐电台～祝您天天好心情！(*^__^*) …… ',
+				'▂▁▂▃▄▅▆♫ 音乐电台～祝您天天好心情！(*^__^*) …… ',
+				'▃▂▁▂▃▄▅ ♪音乐电台～祝您天天好心情！(*^__^*) …… ',
+				'▄▃▂▁▂▃▄♫ 音乐电台～祝您天天好心情！(*^__^*) …… ',
+				'▅▄▃▂▁▂▃ ♪音乐电台～祝您天天好心情！(*^__^*) …… ',
+				'▆▅▄▃▂▁▂♫ 音乐电台～祝您天天好心情！(*^__^*) …… ',
+				'▇▆▅▄▃▂▁ ♫音乐电台～祝您天天好心情！(*^__^*) …… ',
+				'▆▇▆▅▄▃▂♪ 音乐电台～祝您天天好心情！(*^__^*) …… ',
+				'▅▆▇▆▅▄▃ ♫音乐电台～祝您天天好心情！(*^__^*) …… ',
+				'▄▅▆▇▆▅▄♫ 音乐电台～祝您天天好心情！(*^__^*) …… ', 
+				'▃▄▅▆▇▆▅ ♫音乐电台～祝您天天好心情！(*^__^*) …… ', 
+				'▂▃▄▅▆▇▆♪ 音乐电台～祝您天天好心情！(*^__^*) …… ']; 
+var i = 0; 
+function animateTitle() {
+	i >= message.length - 1 ? i = 0 : i++; 
+	document.title = message[i];
+	setTimeout('animateTitle()', 200);	
+}
+animateTitle();
+setTimeout(function(){
+	$('.iframe-comet').src='http://itorr.sinaapp.com/comet/'
+},2000)
+</script>
+       <head>
+         <meta charset="UTF-8">
+         <title>音乐电台～祝您天天好心情(*^__^*)…… </title>
+    <style>
+body{
+	background: #f8faf5 url(images/bg.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #222;
+	}
+a{ color:#EC1010; }
+a:hover{color:#2297D1; }
+.radiobt{
+	font-size:30px; text-align:center; padding-top:90px; font-family:黑体;margin-left:auto; margin-right:auto
+}
+.radiodt{
+	margin-top: 50px; text-align: center;
+}
+.radiobq{
+width:40%; margin-left:auto; margin-right:auto; margin-top:50px; text-align:center; font-size:20px; color:#666; padding-bottom:50px;
+}
+.radiobq a{ text-decoration:none}			
+	
+</style>
+
+</head>
+<body>
+
+<div class="radiobt"><a>欢迎来到Timesong的音乐电台 ♫ 请您欣赏O(∩_∩)O~~</a></div>
+<div class="radiodt">
+<iframe src="http://douban.fm/channel/153" width="430" height="355" border="0" frameborder="no"></iframe>
+</div>
+<div class="radiobq"><a href="http://syongkang.cn/" target="_blank">返回首页</a></div>
+
+</body>
+</html>
